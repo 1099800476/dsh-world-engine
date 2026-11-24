@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "autonomyEnabled": true,
+  "npcs": [
+    {
+      "id": "leafa", "name": "莉法", "role": "autonomous", "enabled": true, "frequency": "normal",
+      "note": "ALO 的风之精灵，喜欢飞行与林地",
+      "templates": [
+        "莉法发来消息，说 ALO 的林道今天风很轻，问要不要一起去飞一段。",
+        "莉法抱怨今天练剑有点累，顺便问你最近有没有好好吃饭。",
+        "莉法在群里发了一张林地日落的照片，说想起以前一起飞过的路线。",
+        "莉法问你周末有没有空，她想带点自家做的小点心过来。"
+      ]
+    },
+    {
+      "id": "lisbeth", "name": "莉兹贝特", "role": "autonomous", "enabled": true, "frequency": "normal",
+      "note": "铁匠铺老板，做剑也做小玩意",
+      "templates": [
+        "莉兹贝特说新打的一把小刀快完工了，让你有空去铺子里看看。",
+        "莉兹贝特发来一张满是铁屑的工作台，说今天忙到忘了吃饭。",
+        "莉兹贝特问你要不要一起给旧武器做个保养，顺便聊两句。",
+        "莉兹贝特托你带句话，说铺子里新来的学徒又把材料弄混了。"
+      ]
+    },
+    {
+      "id": "silica", "name": "西莉卡", "role": "autonomous", "enabled": true, "frequency": "low",
+      "note": "驯兽师，身边总跟着毕娜",
+      "templates": [
+        "西莉卡发来毕娜打哈欠的照片，说它今天特别黏人。",
+        "西莉卡问你有没有见过一种只在清晨开的花，她想摘一点回去。",
+        "西莉卡说今天在森林里迷了会儿路，好在毕娜认得方向。",
+        "西莉卡问你们最近有没有空，想约一次轻松的散步。"
+      ]
+    },
+    {
+      "id": "yuuki", "name": "优纪", "role": "autonomous", "enabled": true, "frequency": "normal",
+      "note": "活泼直接，喜欢热闹",
+      "templates": [
+        "优纪突然发来一句：今天天气这么好，不许宅着！",
+        "优纪说她在练一个新的连招，想找你们当观众。",
+        "优纪发来一张街角小店的招牌，说这家甜品一定要一起试试。",
+        "优纪问你最近是不是太安静了，要不要出来透透气。"
+      ]
+    },
+    {
+      "id": "alice", "name": "爱丽丝", "role": "autonomous", "enabled": true, "frequency": "low",
+      "note": "UW 人界的整合骑士，说话端正",
+      "templates": [
+        "爱丽丝来信，说人界的麦田快到收割的时候了，问你们近来可安好。",
+        "爱丽丝提到整理旧物时翻到一枚旧徽章，想起了从前的事。",
+        "爱丽丝说若有机会，想请你们去看看人界的清晨。",
+        "爱丽丝语气认真地提醒你，天凉了要注意身体。"
+      ]
+    },
+    {
+      "id": "sinon", "name": "诗乃", "role": "autonomous", "enabled": true, "frequency": "low",
+      "note": "狙击手，安静但可靠",
+      "templates": [
+        "诗乃发来一张靶场的照片，说今天手感不错。",
+        "诗乃问你们最近有没有好好休息，语气还是那样淡淡的。",
+        "诗乃说路过一家旧书店，看到一本你可能喜欢的书。",
+        "诗乃简短地发来一句：有空的话，一起打一场。"
+      ]
+    },
+    { "id": "sachi", "name": "幸", "role": "background", "enabled": false, "frequency": "low", "note": "回忆中的旧友，不自主跑剧情" },
+    { "id": "klein", "name": "克莱因", "role": "background", "enabled": false, "frequency": "low", "note": "老朋友，偶尔出现在回忆里" },
+    { "id": "agil", "name": "埃基尔", "role": "background", "enabled": false, "frequency": "low", "note": "商人朋友，背景角色" },
+    { "id": "pina", "name": "毕娜", "role": "background", "enabled": false, "frequency": "low", "note": "西莉卡的伙伴，背景角色" }
+  ]
+}

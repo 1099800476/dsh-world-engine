@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "characterId": "asuna",
+  "name": "亚丝娜",
+  "locationId": "reality-home",
+  "locationName": "现实中的住处",
+  "mood": "平静",
+  "thought": "把屋子简单收拾了一下，等你有空的时候说说话。",
+  "fatigue": 40,
+  "longing": 55,
+  "recentConcerns": [],
+  "updatedAt": null
+}

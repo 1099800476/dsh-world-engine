@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "locations": [
+    {
+      "id": "reality-home", "name": "现实中的住处", "enabled": true, "backgroundOnly": false,
+      "atmosphere": "两个人在现实里住的地方。窗台有一排小盆栽，午后阳光会落在木地板上，厨房水壶烧开时会有轻微的声响。安静、日常、可以什么都不做。",
+      "memories": "一起把书摆上书架的那个下午；熬夜看电影、你睡着后被盖上的毯子。"
+    },
+    {
+      "id": "secret-corner", "name": "二人的专属角落", "enabled": true, "backgroundOnly": false,
+      "atmosphere": "线下常去的安静位置，人不多，能看见一点远处的光。只属于两个人的地方，说话可以很轻。",
+      "memories": "发现这个角落的那个傍晚，你说以后这里只属于我们。"
+    },
+    {
+      "id": "alo-grove", "name": "ALO 妖精之舞领地", "enabled": true, "backgroundOnly": false,
+      "atmosphere": "林道与高空，风穿过树梢的声音很清亮。适合飞一段，也适合什么都不说地并排坐着。",
+      "memories": "一起在林道上飞了很久，风把头发吹乱的那次。"
+    },
+    {
+      "id": "aincrad-ruins", "name": "艾恩葛朗特遗迹", "enabled": true, "backgroundOnly": false,
+      "atmosphere": "旧浮游城的残迹，石阶上长着薄薄的草。光线从断裂的拱顶落下来，很静。适合怀念，也适合把话慢慢说完。",
+      "memories": "迷宫深处并肩的那一夜；月夜森林里追着光走。"
+    },
+    {
+      "id": "uw-human-realm", "name": "UW 人界", "enabled": true, "backgroundOnly": true,
+      "atmosphere": "麦田、清晨与旧徽章。作为过往回忆的背景存在，默认不展开新的剧情。",
+      "memories": "关于「圣母圣咏」的约定，以及那些一路同行的日子。"
+    }
+  ]
+}

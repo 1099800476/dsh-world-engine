@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "evolutionEnabled": true,
+  "ticksPerDay": 2,
+  "eventDensity": "normal",
+  "cooldownDays": 2,
+  "randomEventsEnabled": true,
+  "npcAutonomyEnabled": true,
+  "proactiveChatEnabled": true,
+  "sharedWorldEnabled": true,
+  "majorApprovalRequired": true,
+  "snapshotRetention": {
+    "keepAllDays": 7,
+    "dailyUntilDays": 30,
+    "weeklyUntilDays": 90
+  }
+}

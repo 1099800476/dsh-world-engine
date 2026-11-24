@@ -1,0 +1,14 @@
+{
+  "name": "world-engine",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "通用世界引擎（世界观无关）：时序、状态、时间线、快照、记忆桥、低速自演化",
+  "main": "index.mjs",
+  "scripts": {
+    "start": "node index.mjs",
+    "init": "node index.mjs --init",
+    "selftest": "node selftest.mjs"
+  },
+  "dependencies": {}
+}

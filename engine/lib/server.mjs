@@ -4,7 +4,7 @@ import path from 'node:path';
 import { URL } from 'node:url';
 import { loadWorld, getActiveWorldId, saveConfig, bootstrapWorld, ensureDataLayout } from './config.mjs';
 import { createSnapshot, listSnapshots, restoreSnapshot, fullBackup, listBackups, pruneSnapshots } from './snapshot.mjs';
-import { getProtagonistState, saveProtagonistState, recentEvents, getNpcStates, getPendingApprovals, clearTimeline, getTimeline } from './state.mjs';
+import { getProtagonistState, saveProtagonistState, recentEvents, getNpcStates, getPendingApprovals, clearTimeline, getTimeline, appendTimeline } from './state.mjs';
 import { createMemoryAdapter, memorySummary } from './memory.mjs';
 import { approvalLinkStatus } from './approval-ws.mjs';
 import { runTick, suggestMajor, approveMajor, rejectMajor } from './evolve.mjs';
@@ -199,6 +199,27 @@ export function createServer() {
         const body = await readBody(req);
         if (!body.text) return sendJson(res, 400, { ok: false, error: '缺少 text' });
         return sendJson(res, 200, { ok: true, item: suggestMajor(body.text) });
+      }
+      // 对话摘要回写：二代桥接在自然收尾时把聊天摘要写成一条「共同回忆」进时间线与记忆库。
+      // 与重大节点审批不同：这是日常回忆，不进待审批队列；文本由桥接侧脱敏后传入。
+      if (req.method === 'POST' && p === '/api/chat/record') {
+        const body = await readBody(req);
+        const text = String(body.text || '').trim();
+        if (!text) return sendJson(res, 400, { ok: false, error: '缺少 text' });
+        const worldId = getActiveWorldId();
+        const world = loadWorld(worldId);
+        const tags = Array.isArray(body.tags) ? body.tags.map(String).filter(Boolean).slice(0, 5) : [];
+        const entry = appendTimeline(worldId, {
+          type: 'memory',
+          category: 'chat',
+          actor: world.rules.protagonistCharacterId || 'main',
+          visibility: 'shared',
+          importance: Math.min(5, Math.max(1, Number(body.importance) || 3)),
+          tags: tags.length ? tags : ['聊天回忆'],
+          text: text.slice(0, 300)
+        });
+        createMemoryAdapter(world).append(entry);
+        return sendJson(res, 200, { ok: true, entry });
       }
       if (req.method === 'GET' && p === '/api/event/pending') {
         const world = loadWorld(getActiveWorldId());

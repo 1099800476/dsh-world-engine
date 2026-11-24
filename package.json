@@ -24,6 +24,14 @@
   ],
   "main": "lib/host.js",
   "icon": "icon.svg",
+  "homepage": "https://github.com/1099800476/dsh-world-engine#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1099800476/dsh-world-engine.git"
+  },
+  "bugs": {
+    "url": "https://github.com/1099800476/dsh-world-engine/issues"
+  },
   "exports": {
     ".": "./lib/host.js",
     "./client": "./lib/client.js",
@@ -59,7 +67,7 @@
   "dshhub": {
     "schemaVersion": 1,
     "displayName": "世界引擎",
-    "summary": "本地持久世界的设置面板：世界时间与主角状态、演化规则与开关、自主 NPC 管理、重大节点审批（可联动 QQ 私聊回执）、近期事件与快照备份/回滚。",
+    "summary": "本地持久世界的设置面板：世界时间与主角状态、演化规则与开关、自主 NPC 管理、重大节点审批（可联动 QQ 私聊回执）、近期事件与快照备份/回滚。全部由豆包 AI 制作，仓库：https://github.com/1099800476/dsh-world-engine",
     "categories": [
       "陪伴",
       "世界设定",
